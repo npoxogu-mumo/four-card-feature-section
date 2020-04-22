@@ -1,0 +1,139 @@
+/* line 14, ../02-four-card-feature/scss/style.scss */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 22, ../02-four-card-feature/scss/style.scss */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background-color: #fafafa;
+  color: #a3a5ae;
+}
+
+@media (min-width: 320px) {
+  /* line 31, ../02-four-card-feature/scss/style.scss */
+  .container {
+    width: 311px;
+    margin: 0 auto;
+  }
+  /* line 36, ../02-four-card-feature/scss/style.scss */
+  .header {
+    margin-bottom: 75px;
+    text-align: center;
+  }
+  /* line 40, ../02-four-card-feature/scss/style.scss */
+  .header__txt {
+    margin-top: 13px;
+    line-height: 1.7;
+    margin-bottom: 75px;
+    text-align: center;
+  }
+  /* line 47, ../02-four-card-feature/scss/style.scss */
+  .header__h1 {
+    margin-top: 83px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #4c4e61;
+  }
+  /* line 53, ../02-four-card-feature/scss/style.scss */
+  .header__h1--bold {
+    font-size: 25px;
+    font-weight: 400;
+    color: #4c4e61;
+  }
+  /* line 62, ../02-four-card-feature/scss/style.scss */
+  .section {
+    width: 100%;
+    height: 222px;
+    box-sizing: border-box;
+    padding: 24px 28px 28px 27px;
+    margin-bottom: 25px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px 3px rgba(100, 100, 100, 0.1);
+    transition: transform 0.5s;
+  }
+  /* line 75, ../02-four-card-feature/scss/style.scss */
+  .section:hover {
+    transform: scale(1.1, 1.1);
+  }
+  /* line 80, ../02-four-card-feature/scss/style.scss */
+  .section__h2 {
+    font-size: 20px;
+    color: #4c4e61;
+  }
+  /* line 85, ../02-four-card-feature/scss/style.scss */
+  .section__txt {
+    font-size: 13.5px;
+    margin-top: 5px;
+  }
+  /* line 90, ../02-four-card-feature/scss/style.scss */
+  .section__img {
+    position: absolute;
+    right: 28px;
+    bottom: 28px;
+    width: 57px;
+    height: 57px;
+  }
+  /* line 99, ../02-four-card-feature/scss/style.scss */
+  .bt-red {
+    border-top: 3px solid #ea5353;
+  }
+  /* line 103, ../02-four-card-feature/scss/style.scss */
+  .bt-cyan {
+    border-top: 3px solid #45d3d3;
+  }
+  /* line 107, ../02-four-card-feature/scss/style.scss */
+  .bt-orange {
+    border-top: 3px solid #fcaf4a;
+  }
+  /* line 111, ../02-four-card-feature/scss/style.scss */
+  .bt-blue {
+    border-top: 3px solid #549ef2;
+  }
+  /* line 115, ../02-four-card-feature/scss/style.scss */
+  .footer {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  /* line 120, ../02-four-card-feature/scss/style.scss */
+  a {
+    text-decoration: none;
+    color: #45d3d3;
+  }
+}
+
+@media (min-width: 600px) {
+  /* line 129, ../02-four-card-feature/scss/style.scss */
+  .container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1150px) {
+  /* line 136, ../02-four-card-feature/scss/style.scss */
+  .container {
+    width: 1100px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 144, ../02-four-card-feature/scss/style.scss */
+  .row {
+    width: 30%;
+    padding: 0 15px 0 15px;
+  }
+  /* line 149, ../02-four-card-feature/scss/style.scss */
+  .header__txt {
+    padding: 0 290px 0 290px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

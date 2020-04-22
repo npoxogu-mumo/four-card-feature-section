@@ -1,0 +1,152 @@
+//Colors
+
+//Primary
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+//Neutral
+$vd-blue: hsl(234, 12%, 34%);
+$g-blue: hsl(229, 6%, 66%);
+$vl-gray: hsl(0, 0%, 98%);
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: $vl-gray;
+    color: $g-blue;
+}
+
+@media (min-width: 320px) {
+
+    .container {
+        width: 311px;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin-bottom: 75px;
+        text-align: center;
+
+        &__txt {
+            margin-top: 13px;
+            line-height: 1.7;
+            margin-bottom: 75px;
+            text-align: center;
+        }
+
+        &__h1 {
+            margin-top: 83px;
+            font-size: 25px;
+            font-weight: 200;
+            color: $vd-blue;
+
+            &--bold {
+                font-size: 25px;
+                font-weight: 400;
+                color: $vd-blue;
+            }
+
+        }
+    }
+
+    .section {
+        width: 100%;
+        height: 222px;
+        box-sizing: border-box;
+        padding: 24px 28px 28px 27px;
+        margin-bottom: 25px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 5px;
+
+        box-shadow: 0 10px 15px 3px rgba(100, 100, 100, .1);
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+
+
+        &__h2 {
+            font-size: 20px;
+            color: $vd-blue;
+        }
+
+        &__txt {
+            font-size: 13.5px;
+            margin-top: 5px;
+        }
+
+        &__img {
+            position: absolute;
+            right: 28px;
+            bottom: 28px;
+            width: 57px;
+            height: 57px;
+        }
+    }
+
+    .bt-red {
+        border-top: 3px solid $red;
+    }
+
+    .bt-cyan {
+        border-top: 3px solid $cyan;
+    }
+
+    .bt-orange {
+        border-top: 3px solid $orange;
+    }
+
+    .bt-blue {
+        border-top: 3px solid $blue;
+    }
+
+    .footer {
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $cyan;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .container {
+        width: 550px;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .container {
+        width: 1100px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        width: 30%;
+        padding: 0 15px 0 15px;
+    }
+
+    .header__txt {
+        padding: 0 290px 0 290px;
+    }
+}
